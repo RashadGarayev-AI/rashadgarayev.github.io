@@ -1,48 +1,25 @@
-   $("#development").click(function() {
-    $('html,body').animate({
-        scrollTop: $(".posts").offset().top},
-        'slow');
-});
 
 
-$('.posts').load("/template/news.html");
-$('body').click(function(e){
-    var target=$(e.target),article;
-     if(target.is('#postpage')){
-        $('.posts').load("/template/news.html");
-       
-    };
+
+   
+ $(document).ready(function () {
+    $('#myCarousel').carousel({
+        interval: 2000
+    })
+    $('.carousel-inner .item').each(function () {
+        var next = $(this).next();
+  if (!next.length) {
+    next = $(this).siblings(':first');
+  }
+  next.children(':first-child').clone().appendTo($(this));
   
-
-    if(target.is('#development')){
-        $('.posts').load("/template/development.html");
+  for (var i=0;i<2;i++) {
+    next=next.next();
+    if (!next.length) {
+    	next = $(this).siblings(':first');
+  	}
     
-    };
- 
-    if(target.is('#contact')){
-        $('.posts').load("/template/contact.html");
-       
-        
-    };
-    
-  
-       
+    next.children(':first-child').clone().appendTo($(this));
+  }
+    });
 });
-
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("myBtn").style.display = "block";
-    } else {
-        document.getElementById("myBtn").style.display = "none";
-    }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-};
-
-
