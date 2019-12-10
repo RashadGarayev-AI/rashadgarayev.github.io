@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+ <div class="frameset">
+     <h1 class="frameset-set"></h1>
+ </div>
+ <button class="development" onclick="developpage()"><a href=""></a>İnkişaf</button>
+  <button class="development"><a href=""></a>Müəllimlər</button>
+  <button class="development"><a href=""></a>Köşə</button>
+  <button class="development"><a href=""></a>Qeydiyyat</button>
+  <button class="development"><a href=""></a>Daxil ol</button>
+<script>
+    function developpage()
+    {
+        
+        alert("hello");
+    }
+    </script>
+  
+                                  
+
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+{
+  "name": "jpanel-menu",
+  "version": "1.4.1",
+  "description": "###Version 1.4.1",
+  "main": "jquery.jpanelmenu.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CaesarGustav/jPanelMenu.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CaesarGustav/jPanelMenu/issues"
+  },
+  "homepage": "https://github.com/CaesarGustav/jPanelMenu#readme",
+  "dependencies": {
+    "jquery": ">= 1.7.0"
+  },
+  "gitHead": "8cbcd09412f2a473fe9ec2f14d5dad5f729b5e9e",
+  "_id": "jpanel-menu@1.4.1",
+  "_shasum": "c5b578d6ef19db5e40ca90329fdd6f454a032533",
+  "_from": "jpanel-menu@latest",
+  "_npmVersion": "3.5.2",
+  "_nodeVersion": "0.10.33",
+  "_npmUser": {
+    "name": "psren",
+    "email": "ph@wacg.de"
+  },
+  "dist": {
+    "shasum": "c5b578d6ef19db5e40ca90329fdd6f454a032533",
+    "tarball": "https://registry.npmjs.org/jpanel-menu/-/jpanel-menu-1.4.1.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "psren",
+      "email": "ph@wacg.de"
+    }
+  ],
+  "_resolved": "https://registry.npmjs.org/jpanel-menu/-/jpanel-menu-1.4.1.tgz"
+}
