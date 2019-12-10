@@ -1,23 +1,48 @@
+   $("#development").click(function() {
+    $('html,body').animate({
+        scrollTop: $(".posts").offset().top},
+        'slow');
+});
+
+
+$('.posts').load("/template/news.html");
 $('body').click(function(e){
     var target=$(e.target),article;
-    if(target.is('.mainpage')){
+     if(target.is('#postpage')){
         $('.posts').load("/template/news.html");
-        
-    }
-    if(target.is('.development')){
+       
+    };
+  
+
+    if(target.is('#development')){
         $('.posts').load("/template/development.html");
-        $('.written').hide();
-    }
-    if(target.is('.about')){
-        $('.posts').load("/template/about.html");
-    $('.written').hide();
-    }
-    if(target.is('.contact')){
+    
+    };
+ 
+    if(target.is('#contact')){
         $('.posts').load("/template/contact.html");
-        $('.written').hide();
+       
         
-    }
-   
-   
-   
+    };
+    
+  
+       
 });
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+};
+
+
