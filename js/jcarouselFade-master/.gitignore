@@ -1,6 +1,0 @@
-/src/vendor/bower_components/*
-/build/*
-/node_modules/*
-/.idea/*
-.DS_Store
-.bowerrc

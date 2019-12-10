@@ -1,128 +1,110 @@
 <!DOCTYPE html>
-<html >
+<html>
 <head>
-  <title>academybrain</title>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="courses.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/signlgn.css">
-  <link rel="stylesheet" href="css/courses.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
- <script type="text/javascript" src="js/jquery/dist/jquery.min.js">
-    </script>
-    <script type="text/javascript" src="js/jcarousel/dist/jquery.jcarousel.min.js"></script>
-    <script type="text/javascript" src="js/jcarousel/dist/jquery.jcarousel.js"></script>
-     <script src="js/lightslider-master/dist/js/lightslider.js"></script>
-     <script  src="js/index.js"></script>
- 
+<title>BestBrains</title>
+<meta charset="utf-8">
+
+
+<meta name="description" content="Azərbaycanda ilk Elmi-kütləvi səhifə">
+<meta name="keywords" content="proqramlama,anatomiya,insan,robotlaşdırma,sünii zəka">
+<meta name="author" content="Rəşad Qarayev">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+    
+<link rel="stylesheet" type="text/css" href="css/universe.css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" >
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    
 </head>
+    <!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+    
+    
+    
+  
 <body>
 
-<div class="sharesosialmenu">
+
+<!--Menu-->
+<ul class="nav nav-pills navbar-inverse navbar-fixed-top" style="padding: 5px;">
+<li class="active"><a href="#" id="mainpage">Ana səhifə</a></li>
+    <li><a href="#" id="development">İnkişaf</a></li>
+   
+    <li><a href="#" id="about">Haqqımızda</a></li>
+    <li><a href="#" id="contact">Əlaqə</a></li>
+    <form class="navbar-form navbar-right" role="search" action="index.php" >
+  <div class="form-group" >
+    <input type="text" class="form-control" placeholder="axtar...." style="width: 400px;">
+  </div>
+  <button type="submit" class="btn btn-default">Axtar</button>
+</form>     
+    
+</ul> 
+
+    
+  <button onclick="topFunction()" id="myBtn" title="Səhifənin əvvəlinə geri dönün">Başa dön</button>
+<div class="container" style="width: 100%;height: 300px;">
+    <div class="jumbotron" style="width: 100%;height: 300px;"></div>
+</div>
+    
+    
+
+    
+    
+    
+<div class="container" style="width: 75%; margin-left: 2px;margin-top: 20px;"> 
+<div class="jumbotron" style="text-align: center;background-color: gainsboro;width: 75%">
+<script>
+$('.page').load('news.html')    
+</script>
+</div>  
+    
+    </div>
+<div class="container">
+<div class="iframe" style="width: 30%;float: right; margin">
+    
+    </div>
+    </div>
+      
+    
+
+<!--panel-->
+
+
+
+
+<div class="container" style="width: 100%;height: 400px; text-decoration: none;padding: 10px;">
+  
+<div class="jumbotron" style="width: 100%;height: 400px;">
+    
+    
 <a href="#" class="fa fa-facebook"></a>
 <a href="#" class="fa fa-twitter"></a>
-<a href="#" class="fa fa-youtube"></a>
+<a href="#" class="fa fa-youtube"></a>    
+</div>  
 </div>
+ <script type="text/javascript" src="js/call.js">
 
-<nav id="head-frame">
+    
 
-<ul class="left-menu">
-<li><a href="#/course" id="course">Kurslar</a></li>
-<li><a href="#/teaching" id="teaching">Tədris</a></li>
-<li><a href="#/lifestyle" id="lifestyle">LifeStyle</a></li>
-<li><a href="#/posts">Məqalə</a></li>
-<li><a href="#/entertainment" id="entertainment">Əyləncə</a></li>
-<li><a href="#/about" id="about">Haqqımızda</a></li>
-<li><a href="#/contact" id="contact">Əlaqə</a></li>
-</ul>
-
+    
+    
+</script> 
+  
  
-<form method="POST" action="search.php" autocomplete="on" autofocus >
-<input type="search" name="search" id="searchdetail"  placeholder="Axtarış....." >
-<ul id="searchbutton">
-<li id="searchbutton">axtar</li>
-    </ul>
-</form>  
-
-</nav>
-
-<div class="signlogin">
-   
     
-</div>
-<div class="written">
-</div>
-
-
- <button onclick="topFunction()" id="myBtn" title="Go to top">Başa dön</button>
-<div id="course-frame"></div>
-<div class="finishframe">
-    <div class="sharebutton">
-    <a href="#" class="fa fa-facebook"></a>
-    <a href="#" class="fa fa-twitter"></a>
-    <a href="#" class="fa fa-youtube"></a>
- </div>
-</div>
-
-<script>
-$('body').click(function(e){
-    var target=$(e.target),article;
-    if(target.is('#course')){
-        $('#course-frame').load("course.html .courses");
-        $('.written').hide();
-    }
-    if(target.is('#teaching')){
-        $('#course-frame').load("teaching.html");
-        $('.written').hide();
-    }
-    if(target.is('#lifestyle')){
-        $('#course-frame').load("lifestyle.html");
-    $('.written').hide();
-    }
-    if(target.is('#posts')){
-        $('#course-frame').load("posts.html");
-        $('.written').hide();
-        
-    }
-    if(target.is('#about')){
-        $('#course-frame').load("about.html");
-        $('.written').hide();
-    }
-    if(target.is('#contact')){
-        $('#course-frame').load("contact.html");
-        $('.written').hide();
-    }
-   
-});
-
-
-
-
-
-
-
-
-
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("myBtn").style.display = "block";
-    } else {
-        document.getElementById("myBtn").style.display = "none";
-    }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
-    
-</script>
-
-
+<!--panel-->    
 </body>
+
+
 </html>
